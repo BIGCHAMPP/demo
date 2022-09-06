@@ -1,0 +1,16 @@
+[
+  {
+    "id": 24,
+    "name": "Sonu Nagare",
+    "class": "FY",
+    "standard": "4th Year",
+    "roll_number": 55
+  },
+  {
+    "id": 25,
+    "name": "Hari Nagare",
+    "class": "SY",
+    "standard": "4th Year",
+    "roll_number": 55
+  }
+]
