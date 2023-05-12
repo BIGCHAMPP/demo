@@ -1,0 +1,19 @@
+# Redirect non-existing pages to index.php
+Options +SymLinksIfOwnerMatch 
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . / [L]
+
+RewriteCond %{HTTP_HOST} ^ekostay.com [NC]
+RewriteRule ^(.*)$ http://www.ekostay.com/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RedirectPermanent https://www.ekostay.com/Properties.aspx?subimage=1&loc=Alibag https://www.ekostay.com/#/property?location=Alibaug
+	Redirect 301 "https://www.ekostay.com/Properties.aspx?subimage=1&loc=Alibag" "https://www.ekostay.com/#/property?location=Alibaug"
+	
+
+</IfModule>
+
+
